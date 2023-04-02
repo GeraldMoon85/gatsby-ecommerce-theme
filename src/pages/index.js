@@ -28,7 +28,7 @@ const IndexPage = () => {
 
   return (
     <Layout disablePaddingBottom>
-        <Helmet>
+      <Helmet>
         <meta name="google-site-verification" content="MpcESJL00JjXq30tk7LK-PzreOh77KWPNBz1rPPm5F0" />
         <script>
           {`
