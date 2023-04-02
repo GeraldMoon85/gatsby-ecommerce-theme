@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
 import AttributeGrid from '../components/AttributeGrid';
 import Container from '../components/Container';
@@ -15,15 +16,6 @@ import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
 import * as styles from './index.module.css';
 
-{/* Google tag (gtag.js) */}
-  <><script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script><script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YGZ2TZS8LZ');
-  </script></>
-
 import { Link, navigate } from 'gatsby';
 
 const IndexPage = () => {
@@ -36,6 +28,19 @@ const IndexPage = () => {
 
   return (
     <Layout disablePaddingBottom>
+      <Helmet>
+        {/* Google Analytics tracking code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'YOUR_GA_TRACKING_ID');
+          `}
+        </script>
+      </Helmet>
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
