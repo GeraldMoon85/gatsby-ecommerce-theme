@@ -26,20 +26,10 @@ const IndexPage = () => {
     navigate('/shop');
   };
 
-    <>
-      {/* Add Google tag script */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YGZ2TZS8LZ');
-          `}
-        </script>
-    </>
+    
 
   return (
+    
     
     <Layout disablePaddingBottom>
       <Helmet>
@@ -173,5 +163,18 @@ const IndexPage = () => {
     </Layout>
   );
 };
+
+<>
+      {/* Add Google tag script */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YGZ2TZS8LZ');
+          `}
+        </script>
+    </>
 
 export default IndexPage;
