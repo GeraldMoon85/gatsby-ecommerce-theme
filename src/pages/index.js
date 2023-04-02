@@ -28,8 +28,8 @@ const IndexPage = () => {
 
   return (
     <Layout disablePaddingBottom>
-{/* Google Analytics tracking code */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+        {/* Google Analytics tracking code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
@@ -41,7 +41,6 @@ const IndexPage = () => {
         </script>
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
       height="0" width="0"></iframe></noscript>
-
       <Helmet>
         <meta name="google-site-verification" content="MpcESJL00JjXq30tk7LK-PzreOh77KWPNBz1rPPm5F0" />
         <script>
