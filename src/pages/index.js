@@ -31,6 +31,17 @@ const IndexPage = () => {
         
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
       height="0" width="0"></iframe></noscript>
+      {/* Google Analytics tracking code */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YGZ2TZS8LZ');
+          `}
+        </script>
       <Helmet>
         <meta name="google-site-verification" content="MpcESJL00JjXq30tk7LK-PzreOh77KWPNBz1rPPm5F0" />
         <script>
