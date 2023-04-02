@@ -31,7 +31,7 @@ const IndexPage = () => {
         
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
       height="0" width="0"></iframe></noscript>
-      {/* Google Analytics tracking code */}
+      
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
         <script>
           {`
