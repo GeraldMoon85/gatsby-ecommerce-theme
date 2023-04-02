@@ -26,7 +26,21 @@ const IndexPage = () => {
     navigate('/shop');
   };
 
+    <>
+      {/* Add Google tag script */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YGZ2TZS8LZ');
+          `}
+        </script>
+    </>
+
   return (
+    
     <Layout disablePaddingBottom>
       <Helmet>
         <meta name="google-site-verification" content="MpcESJL00JjXq30tk7LK-PzreOh77KWPNBz1rPPm5F0" />
@@ -39,7 +53,7 @@ const IndexPage = () => {
             })(window,document,'script','dataLayer','GTM-P35QLLP');
           `}
         </script>
-        
+
         
       </Helmet>
       {/* Hero Container */}
