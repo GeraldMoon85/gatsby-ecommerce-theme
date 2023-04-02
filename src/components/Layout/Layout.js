@@ -14,6 +14,19 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
     <>
       <Helmet>
         {/* Add any sitewide scripts here */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
+        height="0" width="0"></iframe></noscript>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YGZ2TZS8LZ');
+          `}
+        </script>
         <link
           rel="stylesheet"
           type="text/css"
