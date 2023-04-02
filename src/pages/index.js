@@ -40,6 +40,7 @@ const IndexPage = () => {
           `}
         </script>
         
+        
       </Helmet>
       {/* Hero Container */}
       <Hero
