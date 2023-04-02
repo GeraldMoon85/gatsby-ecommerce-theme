@@ -41,20 +41,21 @@ const IndexPage = () => {
         </script>
         
       </Helmet>
+
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
+      height="0" width="0"></iframe></noscript>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-YGZ2TZS8LZ');
+        `}
+      </script>
       
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP"
-        height="0" width="0"></iframe></noscript>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-YGZ2TZS8LZ');
-          `}
-        </script>
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
