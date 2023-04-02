@@ -12,8 +12,7 @@ import './Globals.css';
 const Layout = ({ props, children, disablePaddingBottom = false }) => {
   return (
     <>
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P35QLLP" height="0" width="0"></iframe></noscript>
-
+      
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGZ2TZS8LZ"></script>
       <script>
         {`
